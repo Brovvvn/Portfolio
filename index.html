@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Modern portfolio website with tabbed sections for about, skills, projects, resume, and contact."
+    />
+    <title>Your Name Here | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-sheen page-sheen-one"></div>
+    <div class="page-sheen page-sheen-two"></div>
+
+    <main class="shell">
+      <section class="hero-card">
+        <div class="hero-card__layer hero-card__layer--back"></div>
+        <div class="hero-card__layer hero-card__layer--mid"></div>
+
+        <header class="hero">
+          <p class="eyebrow">Portfolio</p>
+          <h1>Your Name Here</h1>
+          <p class="hero__lede">
+            A modern portfolio template with a clean monochrome look, layered depth, and quick tabs for your story,
+            skills, projects, resume, and contact links.
+          </p>
+        </header>
+
+        <nav class="tabs" role="tablist" aria-label="Portfolio sections">
+          <button
+            class="tab is-active"
+            id="about-tab"
+            type="button"
+            role="tab"
+            aria-selected="true"
+            data-tab="about"
+          >
+            About Me
+          </button>
+          <button class="tab" id="skills-tab" type="button" role="tab" aria-selected="false" data-tab="skills">
+            Skills
+          </button>
+          <button class="tab" id="projects-tab" type="button" role="tab" aria-selected="false" data-tab="projects">
+            Projects
+          </button>
+          <button class="tab" id="resume-tab" type="button" role="tab" aria-selected="false" data-tab="resume">
+            Resume
+          </button>
+          <button class="tab" id="contact-tab" type="button" role="tab" aria-selected="false" data-tab="contact">
+            Contact
+          </button>
+        </nav>
+
+        <div class="panels">
+          <section class="panel is-active" id="about" role="tabpanel" aria-labelledby="about-tab">
+            <div class="about-layout">
+              <div class="about-copy">
+                <p class="section-kicker">About Me</p>
+                <h2>Introduce yourself here.</h2>
+                <p>
+                  Use this space for a short bio, your focus areas, what drives your work, and any details you want
+                  visitors to know first. Keep it personal and specific.
+                </p>
+                <p>
+                  You can replace this placeholder text with your own summary, achievements, interests, or a small
+                  statement about the kind of opportunities you're looking for.
+                </p>
+              </div>
+
+              <div class="portrait-wrap" aria-label="Profile image placeholder">
+                <div class="portrait-layer portrait-layer--rear"></div>
+                <div class="portrait-layer portrait-layer--front"></div>
+                <div class="portrait-placeholder">
+                  <span>Insert photo here</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="panel" id="skills" role="tabpanel" aria-labelledby="skills-tab" hidden>
+            <div class="section-head">
+              <p class="section-kicker">Skills</p>
+              <h2>Tools and technologies.</h2>
+            </div>
+            <div class="skills-grid">
+              <span class="skill-chip">🐍 Python</span>
+              <span class="skill-chip">📜 JavaScript</span>
+              <span class="skill-chip">🏗️ HTML</span>
+              <span class="skill-chip">🎨 CSS</span>
+              <span class="skill-chip">💾 MySQL</span>
+              <span class="skill-chip">🦄 Django</span>
+              <span class="skill-chip">🔥 Flask</span>
+              <span class="skill-chip">🐧 Unix</span>
+              <span class="skill-chip">⚙️ C</span>
+              <span class="skill-chip">🔧 C++</span>
+              <span class="skill-chip">⚡ Verilog</span>
+              <span class="skill-chip">🎛️ FPGA</span>
+              <span class="skill-chip">🚀 Vercel</span>
+              <span class="skill-chip">🎯 Qt</span>
+              <span class="skill-chip">✏️ Figma</span>
+            </div>
+          </section>
+
+          <section class="panel" id="projects" role="tabpanel" aria-labelledby="projects-tab" hidden>
+            <div class="section-head">
+              <p class="section-kicker">Projects</p>
+              <h2>Selected work.</h2>
+            </div>
+
+            <div class="project-grid">
+              <article class="project-card">
+                <div class="project-card__header">
+                  <p class="project-index">01</p>
+                  <a href="https://github.com/LT-733/UKNOW-by-PGSD" target="_blank" rel="noreferrer">
+                    UKNOW-by-PGSD
+                  </a>
+                </div>
+                <p class="project-tech">Technologies: Python, Django, HTML, CSS, JavaScript</p>
+                <p>
+                  A web project centered on structured content, interactive pages, and a clean user experience.
+                  Highlight your own contribution and what you learned here.
+                </p>
+                <p class="project-placeholder">Placeholder for your experience building this project.</p>
+              </article>
+
+              <article class="project-card">
+                <div class="project-card__header">
+                  <p class="project-index">02</p>
+                  <a href="https://github.com/Brovvvn/skyblock-flips" target="_blank" rel="noreferrer">
+                    skyblock-flips
+                  </a>
+                </div>
+                <p class="project-tech">Technologies: Python, automation, data parsing, scripting</p>
+                <p>
+                  A utility-style project with a practical workflow and room for performance or data-processing
+                  details.
+                </p>
+                <p class="project-placeholder">Placeholder for your experience building this project.</p>
+              </article>
+
+              <article class="project-card">
+                <div class="project-card__header">
+                  <p class="project-index">03</p>
+                  <a href="https://github.com/Brovvvn/WeatherSite" target="_blank" rel="noreferrer">
+                    WeatherSite
+                  </a>
+                </div>
+                <p class="project-tech">Technologies: Python, Flask, HTML, CSS, API integration</p>
+                <p>
+                  A web application with a straightforward front end and a lightweight back end for live data or
+                  interactive display.
+                </p>
+                <p class="project-placeholder">Placeholder for your experience building this project.</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="panel" id="resume" role="tabpanel" aria-labelledby="resume-tab" hidden>
+            <div class="section-head">
+              <p class="section-kicker">Resume</p>
+              <h2>Drop in your PDF.</h2>
+            </div>
+
+            <div class="resume-frame">
+              <div class="resume-frame__backdrop"></div>
+              <object data="resume.pdf" type="application/pdf" class="resume-viewer">
+                <div class="resume-fallback">
+                  <p class="resume-fallback__title">Resume preview placeholder</p>
+                  <p>
+                    Replace this file with your own <strong>resume.pdf</strong> to display it here.
+                  </p>
+                  <p class="resume-fallback__hint">The layout is already wired to load the PDF in this panel.</p>
+                </div>
+              </object>
+            </div>
+          </section>
+
+          <section class="panel" id="contact" role="tabpanel" aria-labelledby="contact-tab" hidden>
+            <div class="section-head">
+              <p class="section-kicker">Contact</p>
+              <h2>Get in touch.</h2>
+            </div>
+
+            <div class="contact-buttons">
+              <a class="contact-button" href="https://github.com/your-github" target="_blank" rel="noreferrer">
+                GitHub
+              </a>
+              <a class="contact-button" href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noreferrer">
+                LinkedIn
+              </a>
+              <a class="contact-button" href="mailto:your.email@example.com">Email</a>
+            </div>
+
+            <p class="contact-note">
+              Replace the placeholder profile links and email address with your real contact details.
+            </p>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
