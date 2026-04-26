@@ -295,7 +295,7 @@ a {
 }
 
 .about-copy p {
-  color: color-mix(grey, white);
+  color: white;
   line-height: 1.8;
   max-width: 42rem;
 }
@@ -436,7 +436,7 @@ a {
 .project-placeholder {
   padding-top: 0.6rem;
   border-top: 1px solid var(--line);
-  color: color-mix(in srgb, var(--soft), white 50%);
+  color: color-mix(in srgb, var(--soft), white);
   font-style: italic;
 }
 
