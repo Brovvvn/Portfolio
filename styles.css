@@ -436,7 +436,7 @@ a {
 .project-placeholder {
   padding-top: 0.6rem;
   border-top: 1px solid var(--line);
-  color: color-mix(in srgb, var(--soft), white);
+  color: white;
   font-style: italic;
 }
 
